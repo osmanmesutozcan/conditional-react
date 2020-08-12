@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  padding: 20px;
 }
 
 .App-logo {
@@ -34,5 +34,31 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.example {
+  width: 100%;
+  max-width: 1000px;
+  margin: 70px auto;
+}
+
+.example__content {
+  display: flex;
+  flex-direction: row;
+}
+
+.example__preview {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.example__code {
+  flex: 1;
+}
+
+@media only screen and (max-width: 650px) {
+  .example__content {
+    flex-direction: column;
   }
 }
